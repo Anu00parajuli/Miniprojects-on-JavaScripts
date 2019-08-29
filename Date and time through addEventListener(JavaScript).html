@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and time though AddEventListner</title>
+</head>
+<body>
+	<p>Date and time though AddEventListner</p>
+	<center><button id="01">Display Date ,Day and Time</button></center>
+	<p id="02"></p>
+<script type="text/javascript">
+	document.getElementById('01').AddEventListner("clicked",fun1());
+	function fun1() {
+		document.getElementById('02').innerHTML=Date();
+	}
+</script>
+</body>
+</html>
