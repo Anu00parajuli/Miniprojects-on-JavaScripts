@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UpperCase and LowerCase</title>
+</head>
+<body>
+<h1>This is the case of converting UpperCase to LowerCase:<br>
+<input type="text" name="Name" id="01" onchange="UpperCase();"></h1>
+<h1>This is the case of converting LowerCase to UpperCase:<br>
+<input type="text" name="Name" id="02" onchange="LowerCase();"></h1>
+<script type="text/javascript">
+	
+	function UpperCase() {
+		var x =document.getElementById('01');
+		x.value = x.value.toLowerCase();
+	}
+	function LowerCase(){
+		var y =document.getElementById('02');
+		y.value = y.value.toUpperCase();
+	}
+</script>
+</body>
+</html>
